@@ -9,7 +9,6 @@ module.exports = function(grunt) {
         shell: {
 
         },
-
         sass: {
             options: {
                 outputStyle: 'nested',
