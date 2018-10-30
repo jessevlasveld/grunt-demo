@@ -1,6 +1,6 @@
-#Basis grunt project
+# Basis grunt project
 
-##Installeren
+## Installeren
 ____
 
 Zorg dat je Node.js en Grunt en Bower geinstalleerd hebt:
@@ -11,7 +11,7 @@ Zorg dat je Node.js en Grunt en Bower geinstalleerd hebt:
 - Installeer de project dependencies met `npm install` en `bower install` (mogelijk moet je hiervoor uitvoeren als admin)
 - Start Grunt vervolgens met `grunt`
 
-##Mappen structuur
+## Mappen structuur
 
 ```
 Project/
@@ -44,7 +44,7 @@ Project/
 └── README.md
 ```
 
-##Bestands structuur
+## Bestands structuur
 
 `assets/─`
 
@@ -94,24 +94,24 @@ In de editorconfig staan editor instellingen gedefinieerd zoals indentatie
 
 Standaard `.gitignore` de `components` en `node_modules` negeert.
 
-##Grunt taken
+## Grunt taken
 
-###CSS
+### CSS
 
 ─ Alle sass & css wordt samengevoegd (output style: `nested, compact, compressed of expanded`) in 1 bestand (`public/css/screen.css`)
 ─ Pixrem maakt pixel fallbacks van rem waarden
 ─ Autoprefixer doet wat de naam zegt, schrijf alleen `border-radius`, en hij vult automatisch alle prefixes in je bestanden aan
 
-###JS
+### JS
 
 ─ Uglify verwerkt alle javascript. Ook hier kan je verschillende parameters meegeven.
 ─ JSHint/JSLint, deze staan nog niet verwerkt in deze demo, maar deze tools checken je javascript code op fouten, of verbeterpunten en geven deze aan in je terminal.
 
-###Afbeeldingen
+### Afbeeldingen
 
 ─ Imagemin comprimeert automatisch alle afbeeldingen uit `assets/images/─` en plaatst ze in `public/images/─`
 
-###Watch
+### Watch
 
 ─ Watch kijkt naar wijzigingen in de bestanden/folders die je aan hebt gegeven, als er iets wijzigt voert hij alle taken opnieuw uit, je hoeft dus niet telkens `grunt` aan te roepen
 ─ In combinatie met `livereload` kan je browser automatisch herladen worden wanneer er wijzigingen zijn
